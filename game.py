@@ -24,3 +24,7 @@ A faint path lies ahead, leading deeper into the
 Unknown.....
 """
 print(Starting_area)
+
+# Ask the player for their first descision
+decision = input("Do you wish to take the path (Yes or No): ")
+print(decision)
