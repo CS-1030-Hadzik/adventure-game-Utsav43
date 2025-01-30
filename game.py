@@ -6,7 +6,7 @@ author = utsav
 # Welcome message and introduction
 print("welcome to the adventure game")
 
-player_name= input("What is your name adventurer??: ")
+player_name = input("What is your name adventurer??: ")
 
 
 # concatination of string 
@@ -26,5 +26,12 @@ Unknown.....
 print(Starting_area)
 
 # Ask the player for their first descision
-decision = input("Do you wish to take the path (Yes or No): ")
-print(decision)
+decision = input("Do you wish to take the path (Yes or No): ").lower()
+
+if decision == "yes":
+    print(f"Brave choice, {player_name}! you step on to the path adventure forward")
+elif decision == "no":
+    print(f"{player_name} , you decide to wait. perhaps courage will find you later.")
+else:
+    print("confused, you stand still, so wait to do.")
+    
