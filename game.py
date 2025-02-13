@@ -48,8 +48,15 @@ while True:
     
     else:
         print("Invalid Choice!, Please choose 1, 2 or 3")
-        break
+            # break
 
+        # Ask the user if they want to continue
+
+    play_again = input("Do you want to continue\n exploring? (yes or no):").lower()
+
+    if play_again != "yes":
+        print(f"Thanks for playing, {player_name}\n see you next time") 
+        break
 # # Ask the player for their first descision
 # decision = input("Do you wish to take the path (Yes or No): ").lower()
 
