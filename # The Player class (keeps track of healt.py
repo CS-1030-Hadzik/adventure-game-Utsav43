@@ -15,7 +15,6 @@ class Player:
             self.inventory.append(item)
             print(f">>> You picked up: {item}!")
 
-
 # Functions for actions in the game (outside the class)
 def stay_still(player):
     print("You chose to stay still. Your health decreases.")
@@ -23,9 +22,6 @@ def stay_still(player):
     player.show_health()
 
 def explore_cave(player):
-    # TODO: In the cave choice:
-    #       - If player.has_lantern is True: allow entry and add "treasure" to inventory
-    #       - Else: display a message that it’s too dark
     if not player.has_item("lantern"):
         print("It's too dark to explore the cave. You need a lantern. You lose 10 health.")
         player.health -= 10
@@ -35,9 +31,6 @@ def explore_cave(player):
     player.show_health()
 
 def explore_valley(player):
-    # TODO: In the valley choice:
-    #       - If player.has_map is True: allow entry and add "rare herbs" to inventory
-    #       - Else: display a message that you can’t find the valley
     if not player.has_item("map"):
         print("You can't find the valley without a map. You lose 10 health.")
         player.health -= 10
